@@ -1,0 +1,148 @@
+h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Spartan', sans-serif;
+}
+
+/* header section */
+
+.main-header{
+    background: #e7e6e6;
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
+/* button start */
+
+.button {
+    text-decoration: none;
+    width: 115px;
+    height: 40px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    margin-left: 80px;
+    line-height: 43px;
+    border-radius: 23px;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+ul.our-primary-menu li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 12px;
+    color: #585757;
+    font-weight: 500;
+    font-size: 17px;
+    position: relative;
+}
+
+ul.our-primary-menu li a::before {
+    content: "";
+    position: absolute;
+    bottom: -21px;
+    left: 8px;
+    width: 0;
+    height: 3px;
+    background: #9f97f0;
+    transition: .4s;
+}
+
+ul.our-primary-menu li a:hover:before{
+    width: 80%;
+}
+
+ul.our-primary-menu li:first-child a {
+    color: #343291;
+}
+
+ul.our-primary-menu li:first-child a::before {
+    width: 80%;
+}
+
+/* Dropdown Menu */
+
+ul.our-primary-menu li{
+    position: relative;
+    z-index: 1;
+}
+
+ul.our-primary-menu li ul{
+    position: absolute;
+    width: 200px;
+    left: 0;
+    top: 160%;
+    background: #fff;
+    list-style: none;
+    padding-left: 0;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+}
+
+ul.our-primary-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 149%;
+}
+
+ul.our-primary-menu li ul li{
+    background: #3763eb;
+    color: #fff;
+    padding: 20px 0;
+    border: 20px solid #fff;
+    cursor: pointer;
+}
+/* banner section */
+
+.banner-section {
+    background: #edf6ff;
+    padding: 110px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-section .button2 {
+    text-decoration: none;
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    background: #036eff;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #036eff;
+    transition: .4s;
+}
+
+.banner-section .button2:hover{
+    background: #fff;
+    color: #036eff;
+}
+
+.banner-section-text h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-section-text p {
+    color: #7d7592;
+}
+
+.banner-section-img img {
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    position: absolute;
+    top: -82px;
+    right: -100px;
+}
